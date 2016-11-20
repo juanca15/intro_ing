@@ -1,0 +1,85 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	background-color: #D7C5AA;
+	display: flex; /* indetermina su tamaño*/
+	flex-direction: column; /*organiza en columnas*/
+	justify-content: space-between;/*betwen no deja espacios en las esquinas*//*justify-content repartirlo equitativamente*/
+	align-items: center;/* center= centrado de texto*/
+
+}
+header{
+		width: 100%;/*ancho, el % no funciona para alto*/
+		height:60px;/*alto*/
+		background-color: #B09576;
+		justify-content: space-around;
+		display: flex;
+		align-items: center;
+	}
+section{
+	width: 80%;
+	height: 400px;
+	background-color: #2A1992;
+}
+footer{
+	color: white; /*color es para letra, back ggorund es para fondo*/
+	width: 100%; 
+	height:100px;
+	background-color: #34303A;
+	display: flex;
+	flex-direction: column; /*organiza en columnas*/
+	align-items: center;
+
+}
+nav{
+	height: 50px; 
+	width: 100%;
+	background-color: #34303A;
+}
+ul{
+	display: flex;
+	justify-content: space-between; 
+	
+	
+}
+a{
+	color: white; /*color es para letra, back ggorund es para fondo*/
+	text-decoration: none; /* sirve para quitar o poner decoraciones, none= ninguna*/
+}
+li{
+	list-style: none;/*da el diseño al listado*/
+}
+.menu1{
+flex-direction: column; /*organiza en columnas*/
+position: absolute;/*permite mover en toda la pagina sin respetar sus bodes*/
+bottom: 30px;
+background-color: #E50000;
+left: 120px;
+padding: 10px;
+display: none;
+
+}
+.enlaces:hover > .menu1{
+	display: flex;
+}
+.mayor{
+	height: 100%;
+	align-items: center;
+	padding:0px 60px 0px 60px;
+}
+.menu2{
+	position: absolute;/*permite mover en toda la pagina sin respetar sus bodes*/
+	flex-direction: column;
+	right: 100px;
+	bottom: 50px;
+	background-color: #E50000;
+	padding: 10px;
+	display: none;
+}
+.menu:hover > .menu2{
+	display: flex;
+}

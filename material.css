@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	min-height: 100vh;
+	display: flex; /* indetermina su tamaño*/
+	font-family: 'Roboto', sans-serif;
+	background-color: #D7C5AA;
+	align-items: center;
+	flex-direction: column;
+}
+header{
+		width: 100%;/*ancho, el % no funciona para alto*/
+		height:60px;/*alto*/
+		background-color: #B09576;
+		justify-content: space-around;
+		display: flex;
+		align-items: center;
+}
+table{
+	margin-top: 10px;
+	background-color: white;
+	border: #E50000;
+}
+th{
+	padding:20px;
+}
+nav{
+	background-color: #34303A;
+	height: 50px;
+	width: 100%;
+}
+ul{
+	height: 100%;
+	display: flex; /* indetermina su tamaño*/
+	justify-content: space-around;
+	align-items: center;
+}
+li{
+	list-style: none;/*da el diseño al listado*/
+}
+a{
+	color: white;
+	text-decoration: none; /* sirve para quitar o poner decoraciones, none= ninguna*/
+}
